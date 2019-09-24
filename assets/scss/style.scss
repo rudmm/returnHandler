@@ -1,0 +1,242 @@
+A,
+ABBR,
+ACRONYM,
+ADDRESS,
+APPLET,
+ARTICLE,
+ASIDE,
+AUDIO,
+B,
+BIG,
+BLOCKQUOTE,
+BODY,
+CANVAS,
+CAPTION,
+CENTER,
+CITE,
+CODE,
+DD,
+DEL,
+DETAILS,
+DFN,
+DIV,
+DL,
+DT,
+EM,
+EMBED,
+FIELDSET,
+FIGCAPTION,
+FIGURE,
+FOOTER,
+FORM,
+H1,
+H2,
+H3,
+H4,
+H5,
+H6,
+HEADER,
+HGROUP,
+HTML,
+I,
+IFRAME,
+IMG,
+INS,
+KBD,
+LABEL,
+LEGEND,
+LI,
+MARK,
+MENU,
+NAV,
+OBJECT,
+OL,
+OUTPUT,
+P,
+PRE,
+Q,
+RUBY,
+S,
+SAMP,
+SECTION,
+SMALL,
+SPAN,
+STRIKE,
+STRONG,
+SUB,
+SUMMARY,
+SUP,
+TABLE,
+TBODY,
+TD,
+TFOOT,
+TH,
+THEAD,
+TIME,
+TR,
+TT,
+U,
+UL,
+VAR,
+VIDEO {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.global_wrapper {
+    font-weight: normal;
+    font-style: normal;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+.mbox{
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.header{
+    padding-top: 40px;
+    background: #4552cd;
+    min-height: 900px;
+    .mbox{
+        width: 1230px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &_logo{
+        width: 290px;
+        display: inline-block;
+        text-align: left;
+        line-height: 48px;
+        font-size: 40px;
+        font-family: 'Futura PT Book';
+        letter-spacing: 0;
+        font-weight: 300;
+        color: #929AFA;
+        opacity: 1;
+        color: #fff;
+        &_custom{
+            opacity: 0.5;
+        }
+    }
+    &_menu{
+        margin-left: 145px;
+        display: inline-block;
+        .menu-item{
+            display: inline;
+            margin-right: 50px;
+        }
+        .menu-item:last-of-type{
+            margin-right: 0;
+        }
+        .menu{
+            text-align: center;
+            font-size: 16px;
+            line-height: 19px;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            letter-spacing: 0;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+    }
+    &_btn{
+        display: inline-block;
+        float: right;
+        width: 177px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #FFFFFF;
+        border-radius: 8px;
+        opacity: 1;
+        a{
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+    }
+    .header-content{
+        position: relative;
+        .section-title{
+            margin-top: 150px;
+            *{
+                max-width: 800px;
+                text-align: left;
+                font-size: 56px;
+                line-height: 68px;
+                font-family: 'Montserrat';
+                font-weight: 900;
+                letter-spacing: 0;
+                color: #FFFFFF;
+                opacity: 1;
+            }
+            margin-bottom: 50px;
+        }
+        .text{
+            text-align: left;
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px ;
+            letter-spacing: 0;
+            color: #FFFFFF;
+            opacity: 1;
+            max-width: 580px;
+            margin-bottom: 50px;
+        }
+        .top-btn{
+            width: 202px;
+            height: 60px;
+            background: #FF4D29 0% 0% no-repeat padding-box;
+            border-radius: 8px;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0;
+                color: #FFFFFF;
+                opacity: 1;
+            }
+        }
+    }
+    .top-image{
+        width: 48%;
+        min-width: 640px;
+        height: 679px;
+        position: absolute;
+        right: 0;
+        top: 165px;
+    }
+}
