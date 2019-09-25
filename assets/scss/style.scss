@@ -117,12 +117,16 @@ a{
 }
 .header{
     padding-top: 40px;
-    background: #4552cd;
-    min-height: 900px;
+    min-height: 750px;
+    background: url(../img/bg.jpg) no-repeat;
     .mbox{
         width: 1230px;
         margin-left: auto;
         margin-right: auto;
+        header{
+            display: flex;
+            align-items: center;
+        }
     }
     &_logo{
         width: 290px;
@@ -163,7 +167,7 @@ a{
     }
     &_btn{
         display: inline-block;
-        float: right;
+        margin-left: auto;
         width: 177px;
         height: 50px;
         display: flex;
@@ -238,5 +242,95 @@ a{
         position: absolute;
         right: 0;
         top: 165px;
+    }
+}
+
+//end header styles
+
+//begin info section
+
+.info{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    display: flex;
+    &_image{
+        margin-left: 170px;
+        width: 750px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_text{
+        margin-left: 40px;
+        &_title{
+            margin-top: 90px;
+        }
+        &_title > *{
+            width: 615px;
+            text-align: left;
+            font-size: 45px;
+            line-height: 55px;
+            font-family: 'Montserrat';
+            font-weight: 900;
+            letter-spacing: 0;
+            color: #3D466E;
+            opacity: 1;
+            span{
+                display: inline-block;
+                box-shadow: 0 -20px 0 0px #f67e90 inset;
+            }
+        }
+        &_p{
+            margin-top: 30px;
+            width: 615px;
+            text-align: left;
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0;
+            color: #3D466E;
+            strong{
+                font-weight: 700;
+            }
+        }
+        &_btn{
+            margin-top: 30px;
+            width: 322px;
+            height: 50px;
+            background: #3A46D8 0% 0% no-repeat padding-box;
+            border-radius: 8px;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0;
+                color: #FFFFFF;
+                opacity: 1;
+            }
+            a img{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.reverse{
+    flex-direction: row-reverse;
+    .info_image{
+        margin-left: 0;
+        margin-right: 95px;
+    }
+    .info_text{
+        margin-left: 0;
+        margin-right: 110px;
     }
 }
