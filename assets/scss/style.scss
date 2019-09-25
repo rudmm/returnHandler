@@ -364,7 +364,7 @@ a{
 
 .help{
     background: url(../img/bghelp.png) no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     padding-top: 140px;
     padding-bottom: 190px;
     &_content{
@@ -481,6 +481,15 @@ a{
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    //end platform section
+
+    //begin help section
+
+    .help{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 @media screen and (max-width: 1366px){
@@ -523,6 +532,13 @@ a{
     }
 
     //end section flex
+
+    //begin help section
+
+    .help{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 @media screen and (max-width: 1280px){
@@ -571,6 +587,20 @@ a{
             width: auto;
         }
     }
+
+    //begin help section
+
+    .help{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        &_content{
+            max-width: 100%;
+            &_title > *{
+                font-size: 39px;
+                line-height: 45px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1024px){
@@ -610,6 +640,26 @@ a{
             min-width: 560px;
             height: 500px;
         }
+    }
+
+    //end header
+
+    //begin help section
+
+    .help{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        &_content{
+            &_btn{
+                width: 150px;
+                height: 45px;
+                a{
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+        
     }
 }
 
@@ -663,6 +713,21 @@ a{
         padding-bottom: 30px;
         .info_text_title{
             margin-top: 45px;
+        }
+    }
+
+    //end platform section
+
+    //begin help section
+
+    .help{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        &_content{
+            &_title > *{
+                font-size: 33px;
+                line-height: 38px;
+            }
         }
     }
 }
@@ -742,6 +807,19 @@ a{
             margin-right: auto;
         }
     }
+
+    //begin help section
+
+    .help{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &_content{
+            &_title > *{
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -795,6 +873,22 @@ a{
                     font-size: 14px;
                     line-height: 16px;
                 }
+            }
+        }
+    }
+
+    //begin help section
+
+    .help{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &_content{
+            &_title > *{
+                font-size: 20px;
+                line-height: 22px;
+            }
+            &_btn{
+                margin-top: 15px;
             }
         }
     }
