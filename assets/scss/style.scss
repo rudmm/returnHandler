@@ -1,4 +1,6 @@
 $shadowTitle: 0 -20px 0 0px #f67e90 inset;
+$shadowTitle1280: 0 -15px 0 0 #f67e90 inset;
+$shadowTitle480: 0 -10px 0 0 #f67e90 inset;
 A,
 ABBR,
 ACRONYM,
@@ -455,6 +457,25 @@ a{
 
 //responsive
 
+@media screen and (max-width: 1600px){
+    .info{
+        &_image{
+            margin-left: 50px;
+        }
+        &_text{
+            margin-left: 10px;
+        }
+    }
+    .reverse{
+        .info_image{
+            margin-right: 50px;
+        }
+        .info_text{
+            margin-right: 30px;
+        }
+    }
+}
+
 @media screen and (max-width: 1366px){
     .header{
         min-height: 675px;
@@ -475,6 +496,26 @@ a{
             }
         }
     }
+
+    //end header styles
+
+    //begin flex section
+
+    .info{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        &_image{
+            margin-left: 10px;
+        }
+    }
+    .reverse{
+        .info_text{
+            margin-left: 10px;
+        }
+
+    }
+
+    //end section flex
 }
 
 @media screen and (max-width: 1280px){
@@ -484,6 +525,29 @@ a{
     }
     .header-content{
         max-width: 45%;
+    }
+
+    //end header
+
+    //begin flex section
+
+    .info{
+        &_text{
+            max-width: 50%;
+            &_title > *{
+                width: auto;
+                font-size: 39px;
+                line-height: 45px;
+                span{
+                    box-shadow: $shadowTitle1280;
+                }
+            }
+            &_p{
+                width: auto;
+                font-size: 21px;
+                line-height: 30px;
+            }
+        }
     }
 }
 
@@ -539,6 +603,37 @@ a{
             justify-content: space-between;
         }
     }
+
+    //end header
+
+    //begin flex section
+
+    .info{
+        margin-top: 20px;
+        margin-bottom: 0;
+        &_text{
+            &_title > *{
+                font-size: 33px;
+                line-height: 38px;
+            }
+            &_p{
+                margin-top: 15px;
+                font-size: 19px;
+                line-height: 26px;
+            }
+            &_btn{
+                margin-top: 15px;
+
+            }
+        }
+    }
+    .reverse{
+        .info_text{
+            margin-right: 10px;
+        }
+    }
+
+    //end flex section
 }
 
 @media screen and (max-width: 768px){
@@ -572,6 +667,50 @@ a{
             margin-left: auto;
         }
     }
+
+    //end header styles
+
+    //begin flex section
+
+    .infosection{
+        margin-bottom: 40px;
+    }
+
+    .info{
+        flex-wrap: wrap;
+        &_text{
+            max-width: 100%;
+            margin-bottom: 30px;
+            &_title{
+                margin-top: 0;
+            }
+            &_title br{
+                display: none;
+            }
+            &_title > *{
+                font-size: 30px;
+                line-height: 35px;
+            }
+            &_p{
+                font-size: 18px;
+                line-height: 23px;
+            }
+        }
+        &_image{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+    }
+    .reverse{
+        .info_image{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -585,7 +724,7 @@ a{
                 margin-bottom: 10px;
             }
             .section-title > *{
-                font-size: 20px;
+                font-size: 22px;
                 line-height: 30px;
             }
             .text{
@@ -598,6 +737,34 @@ a{
             min-width: 0;
             width: 100%;
             height: auto;
+        }
+    }
+
+    //end header
+
+    //begin flex slider
+
+    .info{
+        &_text{
+            &_title > *{
+                font-size: 20px;
+                line-height: 22px;
+            }
+            &_title span{
+                box-shadow: $shadowTitle480;
+            }
+            &_p{
+                font-size: 16px;
+                line-height: 20px;
+            }
+            &_btn{
+                width: 285px;
+                height: 45px;
+                a{
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
         }
     }
 }
