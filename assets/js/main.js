@@ -15,16 +15,10 @@ function clickBurger(){
     let fixedblock = $('.header header .fixedblock');
     btn.click(function(){
         btn.toggleClass('open');
-        header.addClass('fixed mobile');
-        fixedblock.addClass('mobilefixedblock');
-        navbar.slideToggle();
-        let navbaritem = $('.nav-bar li a');
-        for(let i =0;i<navbaritem.length;i++){
-            navbaritem.eq(i).click(function(){
-                btn.removeClass('open');
-                navbar.slideUp();
-            });
-        }
+        navbar.slideToggle(10);
+        header.toggleClass('fixed mobile','easeInQuad');
+        fixedblock.toggleClass('mobilefixedblock','easeInQuad');
+       
     });
 }
 $(window).scroll(function(){
