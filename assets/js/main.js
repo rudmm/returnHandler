@@ -21,9 +21,37 @@ function clickBurger(){
        
     });
 }
+
+function resize() {
+    let $image = $(".image_animate");
+    let $wrapper = $(".top-image");
+    let $windowWidth = $(window).width();
+    let transformRule = '';
+    let wrapperHeight = $wrapper.height();
+    let imageHeight = $image.outerHeight();
+    //let scale = Math.min($wrapper.width() / $image.outerWidth(), wrapperHeight / imageHeight);
+    let scale = $windowWidth / 1920;
+    transformRule = "scale(" + scale + ")";
+
+
+    $image.css({
+        transform: transformRule
+    });
+}
+
 $(window).scroll(function(){
     menu();
 });
 $(document).ready(function(){
     clickBurger();
+    resize();
+});
+
+$(window).resize(function () {
+    resize();
+});
+$(window).on("orientationchange", function () {
+    if ($(window).width() > 500) {
+        resize();
+    }
 });

@@ -1,6 +1,41 @@
 $shadowTitle: 0 -20px 0 0px #f67e90 inset;
 $shadowTitle1280: 0 -15px 0 0 #f67e90 inset;
 $shadowTitle480: 0 -10px 0 0 #f67e90 inset;
+@keyframes my-animation{
+    0%{
+        transform: translateY(-1px);
+    }
+    10%{
+        transform: translateY(-2px);
+    }
+    20%{
+        transform: translateY(-3px);
+    }
+    30%{
+        transform: translateY(-4px);
+    }
+    40%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(-6px);
+    }
+    60%{
+        transform: translateY(-7px);
+    }
+    70%{
+        transform: translateY(-8px);
+    }
+    80%{
+        transform: translateY(-9px);
+    }
+    90%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(-11px);
+    }
+}
 A,
 ABBR,
 ACRONYM,
@@ -362,6 +397,7 @@ a{
         top: 165px;
         width: 929px;
         height: 679px;
+        max-width: 50%;
         .image_animate{
             position: relative;
             width: 100%;
@@ -376,28 +412,33 @@ a{
             position: absolute;
         }
         .element1{
-            top: 8%;
-            left: 25%;
+            top: 50px;
+            left: 235px;
             z-index: 8;
+            animation: my-animation 2s ease infinite;
         }
         .element2{
-            left: 53%;
-            top: 21%;
+            left: 480px;
+            top: 140px;
             z-index: 10;
+            animation: my-animation 2s ease infinite;
         }
         .element3{
-            left: 47%;
-            top: 1%;
+            left: 435px;
+            top: 10px;
+            animation: my-animation 2s ease infinite;
         }
         .element4{
-            top: 1%;
-            left: 15%;
+            top: 10px;
+            left: 150px;
             z-index: 7;
+            animation: my-animation 2s ease infinite;
         }
         .element5{
-            top: 37%;
-            left: 25%;
+            top: 250px;
+            left: 235px;
             z-index: 10;
+            animation: my-animation 2s ease infinite;
         }
     }
 }
