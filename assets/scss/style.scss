@@ -551,6 +551,26 @@ a{
     }
 }
 
+.solutioninfo{
+    .info_image{
+        margin: 0;
+        max-width: 46%;
+    }
+    .info_text{
+        margin: 0;
+        max-width: 54%;
+        &_title{
+            margin-top: 0;
+        }
+        .text_block{
+            margin-bottom: 70px;
+        }
+        .text_block::last-of-type{
+            margin-bottom: 0;
+        }
+    }
+}
+
 //end section flex
 
 //begin section platform
@@ -1097,7 +1117,7 @@ a{
     //begin flex section
 
     .infosection{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .info{
@@ -1134,6 +1154,19 @@ a{
             margin-left: auto;
             margin-right: auto;
         }
+    }
+    .solutioninfo{
+        .info_image{
+            max-width: 100%;
+        }
+        .info_text{
+            max-width: 100%;
+            padding: 0 10px;
+            .text_block{
+                margin-bottom: 30px;
+            }
+        }
+        
     }
 
     //begin help section
