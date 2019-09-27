@@ -565,13 +565,84 @@ a{
         .text_block{
             margin-bottom: 70px;
         }
-        .text_block::last-of-type{
+        .text_block:last-of-type{
             margin-bottom: 0;
         }
     }
 }
 
 //end section flex
+
+//begin section emoji
+
+.emoji{
+    background: #E8F0FF 0% 0% no-repeat padding-box;
+    padding: 150px 0;
+    .mbox{
+        width: 100%;
+        max-width: 1230px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-title > *{
+        text-align: left;
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: 45px;
+        line-height: 55px;
+        letter-spacing: 0;
+        color: #3D466E;
+        opacity: 1;
+    }
+    .section-title{
+        max-width: 800px;
+    }
+    .emoji_image{
+        position: relative;
+        img{
+            margin-left: -20px;
+        }
+        .emoji_image_title{
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: 0;
+            color: #3D466E;
+            position: absolute;
+            left: 0;
+            top: 100px;
+        }
+        .emoji_image_text{
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0;
+            color: #3D466E;
+            position: absolute;
+            left: 0;
+            top: 320px;
+        }
+    }
+    .two{
+        margin-top: -145px;
+        .emoji_image_title{
+            top: 220px;
+        }
+        .emoji_image_text{
+            bottom: 0;
+            top: auto;
+        }
+        .top{
+            max-width: 180px;
+            left: 650px;
+            top: 180px;
+        }
+    }
+}
+
+//end section emoji
 
 //begin section platform
 
@@ -839,6 +910,16 @@ a{
 
     //end flex section
 
+    //begin emoji section
+
+    .emoji{
+        padding: 100px 10px;
+    }
+
+    //end emoji section
+
+    //begin platform section
+
     .platform{
         .info{
             margin-top: 0;
@@ -916,6 +997,46 @@ a{
 
     //end header
 
+    //begin emoji
+
+    .emoji{
+        padding: 50px 10px;
+        .section-title > *{
+            font-size: 33px;
+            line-height: 44px;
+        }
+        .emoji_image{
+            img{
+            }
+            .emoji_image_title{
+                left: 0;
+                top: 20%;
+                font-size: 30px;
+                line-height: 38px;
+            }
+            .emoji_image_text{
+                left: 0;
+                bottom: 30%;
+                top: auto;
+            }
+        }
+        .two{
+            .emoji_image_title{
+                top: 45%;
+            }
+            .emoji_image_text{
+                bottom: 0;
+            }
+            .top{
+                left: auto;
+                right: 20%;
+                top: 40%;
+            }
+        }
+    }
+
+    //end emoji
+
     //begin help section
 
     .help{
@@ -989,6 +1110,24 @@ a{
     }
 
     //end flex section
+
+
+    //begin emoji
+
+    .emoji{
+        .emoji_image{
+            .emoji_image_title{
+                font-size: 26px;
+                line-height: 32px;
+            }
+            .emoji_image_text{
+                font-size: 17px;
+                line-height: 21px;
+            }
+        }
+    }
+
+    //end emoji
 
     //begin platform section
     .platform{
@@ -1169,6 +1308,39 @@ a{
         
     }
 
+    //end flex section 
+
+    //begin emoji
+
+    .emoji{
+        padding: 20px 10px;
+        .section-title > *{
+            font-size: 30px;
+            line-height: 35px;
+        }
+        .emoji_image{
+            img{
+                margin-left: -15px;
+            }
+            .emoji_image_title{
+                font-size: 22px;
+                line-height: 36px;
+            }
+            .emoji_image_text{
+                font-size: 15px;
+                line-height: 17px;
+            }
+        }
+        .two{
+            margin-top: -100px;
+            .top{
+                right: 18%;
+            }
+        }
+    }
+
+    //end emoji
+
     //begin help section
 
     .help{
@@ -1208,6 +1380,27 @@ a{
             height: 500px;
         }
     }
+
+    //end header
+
+    //begin emoji
+
+    .emoji{
+        .emoji_image{
+            .emoji_image_text{
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        .two{
+            .top{
+                right: 16%;
+                top: 35%;
+            }
+        }
+    }
+
+    //end emoji
 }
 
 @media screen and (max-width: 480px){
@@ -1265,6 +1458,40 @@ a{
         }
     }
 
+    //end flex section
+
+    //begin emoji
+
+    .emoji{
+        .section-title > *{
+            font-size: 20px;
+            line-height: 22px;
+        }
+        .emoji_image{
+            img{
+                margin-left: -5px;
+            }
+            .emoji_image_title{
+                font-size: 15px;
+                line-height: 18px;
+            }
+            .emoji_image_text{
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+        .two{
+            margin-top: -50px;
+            .top{
+                text-align: right;
+                right: 0%;
+                top: 25%;
+            }
+        }
+    }
+
+    //end emoji
+
     //begin help section
 
     .help{
@@ -1297,4 +1524,33 @@ a{
             }
         }
     }
+}
+
+@media screen and (max-width: 320px){
+    //begin emoji
+
+    .emoji{
+        .emoji_image{
+            img{
+                margin-left: -5px;
+            }
+            .emoji_image_text{
+                font-size: 11px;
+                line-height: 14px;
+                bottom: 25%;    
+            }
+        }
+        .two{
+            margin-top: -20px;
+            .top{
+                text-align: right;
+                max-width: 50%;
+            }
+            .emoji_image_text{
+                bottom: -2%;
+            }
+        }
+    }
+
+    //end emoji
 }
