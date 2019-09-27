@@ -3,37 +3,13 @@ $shadowTitle1280: 0 -15px 0 0 #f67e90 inset;
 $shadowTitle480: 0 -10px 0 0 #f67e90 inset;
 @keyframes my-animation{
     0%{
-        transform: translateY(-1px);
-    }
-    10%{
         transform: translateY(-2px);
     }
-    20%{
-        transform: translateY(-3px);
-    }
-    30%{
-        transform: translateY(-4px);
-    }
-    40%{
-        transform: translateY(-5px);
-    }
     50%{
-        transform: translateY(-6px);
-    }
-    60%{
-        transform: translateY(-7px);
-    }
-    70%{
-        transform: translateY(-8px);
-    }
-    80%{
-        transform: translateY(-9px);
-    }
-    90%{
-        transform: translateY(-10px);
+        transform: translateY(-12px);
     }
     100%{
-        transform: translateY(-11px);
+        transform: translateY(-2px);
     }
 }
 A,
@@ -217,6 +193,10 @@ a{
             display: inline;
             margin-right: 50px;
             transition: all .3s;
+            a.current{
+                padding-bottom: 5px;
+                border-bottom: 1px solid;
+            }
         }
         .menu-item:hover{
             opacity: .5;
@@ -424,13 +404,13 @@ a{
             top: 50px;
             left: 235px;
             z-index: 8;
-            animation: my-animation 2s ease infinite;
+            animation: my-animation 1s ease infinite;
         }
         .element2{
             left: 480px;
             top: 140px;
             z-index: 10;
-            animation: my-animation 2s ease infinite;
+            animation: my-animation 4s ease infinite;
         }
         .element3{
             left: 435px;
@@ -441,13 +421,37 @@ a{
             top: 10px;
             left: 150px;
             z-index: 7;
-            animation: my-animation 2s ease infinite;
+            animation: my-animation 3s ease infinite;
         }
         .element5{
             top: 250px;
             left: 235px;
             z-index: 10;
-            animation: my-animation 2s ease infinite;
+            animation: my-animation 5s ease infinite;
+        }
+    }
+}
+.solution{
+    background: #0C1634 0% 0% no-repeat padding-box;
+    min-height: 670px;
+    .top-image{
+        top: 210px;
+        height: 500px;
+        .cart{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .map{
+            top: 140px; 
+            left: 160px;
+        }
+        .star{
+            right: 165px;
+            top: 45px;
+        }
+        .love{
+            right: 140px;
+            top: 200px;
         }
     }
 }
@@ -783,6 +787,12 @@ a{
         padding-left: 10px;
         padding-right: 10px;
     }
+    .solution{
+        min-height: 530px;
+        .top-image{
+            top: 150px;
+        }
+    }
 
     //end header
 
@@ -879,6 +889,9 @@ a{
         .top-image{
             top: 110px;
         }
+    }
+    .solution{
+        min-height: 420px;
     }
 
     //end header
