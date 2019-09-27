@@ -644,6 +644,32 @@ a{
 
 //end section emoji
 
+//begin phone section
+
+.phone{
+    padding-top: 145px;
+    .section-title  *{
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: 45px;
+        line-height: 55px;
+        letter-spacing: 0;
+        color: #3D466E;
+        opacity: 1;
+        margin-bottom: 50px;
+    }
+    .phone_image{
+        text-align: center;
+        vertical-align: bottom;
+        img{
+            transform: translateX(-15%);
+        }
+    }
+}
+
+//end phone section
+
 //begin section platform
 
 .platform{
@@ -1037,6 +1063,18 @@ a{
 
     //end emoji
 
+    //begin phone section
+
+.phone{
+    padding-top: 50px;
+    .section-title  *{
+        font-size: 33px;
+        line-height: 44px;
+    }
+}
+
+//end phone section
+
     //begin help section
 
     .help{
@@ -1083,7 +1121,9 @@ a{
     //end header
 
     //begin flex section
-
+    .infosection{
+        margin-bottom: 20px;
+    }
     .info{
         margin-top: 20px;
         margin-bottom: 0;
@@ -1115,6 +1155,7 @@ a{
     //begin emoji
 
     .emoji{
+        padding: 20px 10px;
         .emoji_image{
             .emoji_image_title{
                 font-size: 26px;
@@ -1128,6 +1169,14 @@ a{
     }
 
     //end emoji
+
+    //begin phone section
+
+    .phone{
+        padding-top: 20px;
+    }
+
+    //end phone section
 
     //begin platform section
     .platform{
@@ -1341,6 +1390,17 @@ a{
 
     //end emoji
 
+    //begin phone section
+
+     .phone{
+        .section-title > *{
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+
+    //end phone section
+
     //begin help section
 
     .help{
@@ -1491,6 +1551,21 @@ a{
     }
 
     //end emoji
+
+    //begin phone section
+
+    .phone{
+        .section-title > *{
+            font-size: 20px;
+            line-height: 22px;
+            margin-bottom: 10px;
+            br{
+                display: none;
+            }
+        }
+    }
+
+    //end phone section
 
     //begin help section
 
