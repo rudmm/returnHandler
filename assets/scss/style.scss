@@ -158,6 +158,7 @@ a{
     padding-top: 40px;
     min-height: 830px;
     background: url(../img/bg.jpg) no-repeat;
+    background-size: 100% 100%;
     header{
         max-width: 1920px;
         .bg{
@@ -336,6 +337,7 @@ a{
     .header-content{
         position: relative;
         z-index: 10;
+        max-width: 58%;
         .section-title{
             margin-top: 150px;
             *{
@@ -394,14 +396,21 @@ a{
     .top-image{
         position: absolute;
         right: 0;
-        top: 165px;
-        width: 929px;
+        top: 100px;
         height: 679px;
+        width: 100%;
         max-width: 50%;
-        .image_animate{
-            position: relative;
-            width: 100%;
+        .wrapper{
             height: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .image_animate{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 929px;
+            height: 679px;
         }
         .headerelement{
             bottom: 0;
@@ -1062,6 +1071,7 @@ a{
             margin-top: 20px;
             margin-left: auto;
             max-width: 100%;
+            height: 600px;
         }
         .btn-menu{
             display: inline-block;
@@ -1146,6 +1156,14 @@ a{
     }
 }
 
+@media screen and (max-width: 666px){
+    .header{
+        .top-image{
+            height: 500px;
+        }
+    }
+}
+
 @media screen and (max-width: 480px){
     .header{
         .header_logo{
@@ -1169,7 +1187,7 @@ a{
         .top-image{
             min-width: 0;
             width: 100%;
-            height: auto;
+            height: 360px;
         }
     }
 

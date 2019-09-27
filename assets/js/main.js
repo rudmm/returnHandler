@@ -25,14 +25,18 @@ function clickBurger(){
 function resize() {
     let $image = $(".image_animate");
     let $wrapper = $(".top-image");
-    let $windowWidth = $(window).width();
+    let basWidth = 929;
+    let basHeight = 629;
     let transformRule = '';
     let wrapperHeight = $wrapper.height();
-    let imageHeight = $image.outerHeight();
-    //let scale = Math.min($wrapper.width() / $image.outerWidth(), wrapperHeight / imageHeight);
-    let scale = $windowWidth / 1920;
-    transformRule = "scale(" + scale + ")";
-
+    let scale = Math.min($wrapper.width() / basWidth, wrapperHeight / basHeight);
+    let realyHeightImage = $image.height()/(Math.max(basWidth/ $wrapper.width() , basHeight /wrapperHeight  )); 
+    let procentTranslateY = 50;
+    let windowWidth = $(window).outerWidth();
+    if(windowWidth>768){ 
+        procentTranslateY = (100 - realyHeightImage/( wrapperHeight/100))/2 +50;
+    }
+    transformRule = "translate(-50%, -"+procentTranslateY+"%) scale(" + scale + ")";
 
     $image.css({
         transform: transformRule
