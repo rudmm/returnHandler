@@ -130,6 +130,35 @@ a{
     margin-right: auto;
     position: relative;
 }
+.section-title > *{
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 55px;
+}
+.btn{
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-questions{
+        width: 250px;
+        height: 60px;
+        background: #FF4D29 0% 0% no-repeat padding-box;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a{
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}
 .header{
     padding-top: 40px;
     min-height: 830px;
@@ -670,6 +699,124 @@ a{
 
 //end phone section
 
+//begin questions section
+
+.questions{
+    padding: 140px 0;
+    background: #0C1634 0% 0% no-repeat padding-box;
+    background-image: url(../img/solution/bgquestions.png);
+    background-position: bottom;
+    .mbox{
+        width: 100%;
+        max-width: 1230px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-title > *{
+        color: #fff;
+        text-align: center;
+    }
+    .questions-list{
+        margin-top: 50px;
+        .list-item{
+            border: 1px solid #6CAAFF;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            .question{
+                padding: 27px 32px;
+                display: flex;
+                align-items: center;
+                h4{
+                    font-family: 'HelveticaNeueCyr';
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 25px;
+                    letter-spacing: 0;
+                    color: #FFFFFF;
+                    display: inline-block;
+                }
+                .circle{
+                    position: relative;
+                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
+                    width: 37px;
+                    height: 37px;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                    cursor: pointer;
+                    .arrow-lines {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 10px;
+                        z-index: 4;
+                        transform: translate(-50%,-50%);
+                        .arrow-line {
+                            position: absolute;
+                            top: 0;
+                            width: 15px;
+                            height: 3px;
+                            border-radius: 10px;
+                            background-color: #fff;
+                            -webkit-transition: transform 0.3s ease-out;
+                            -moz-transition: transform 0.3s ease-out;
+                            -o-transition: transform 0.3s ease-out;
+                            transition: transform 0.3s ease-out;
+                        }
+                        .arrow-line.left {
+                            left: -7px;
+                            transform: rotate(45deg);
+                        }
+                        .arrow-line.right {
+                            right: -7px;
+                            transform: rotate(-45deg);
+                        }
+                      }
+                      .open{
+                          top: 45%;
+                          .arrow-line.left{
+                              transform: rotate(-45deg);
+                          }
+                          .arrow-line.right{
+                              transform: rotate(45deg);
+                          }
+                      }
+                }
+            }
+            .wrapper_line{
+                display: flex;
+                justify-content: center;
+            }
+            .answer_line{
+                width: 0;
+                height: 1px;
+                background-color: #6CAAFF;
+                transition: width .3s ease-out;
+            }
+            .openLine{
+                width: 100%;
+                transition: width .3s ease-out;
+            }
+            .answer{
+                display: none;
+                padding: 25px 32px;
+                & > *{
+                    font: Regular 20px/30px Helvetica Neue;
+                    font-family: 'HelveticaNeueCyr';
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 0;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+//end questions section
+
 //begin section platform
 
 .platform{
@@ -959,6 +1106,24 @@ a{
         }
     }
 
+    //end platform section
+
+    //begin phone section
+
+    .phone{
+        padding-top: 100px;
+    }
+
+    //end phone section
+
+    //begin questions section
+
+    .questions{
+        padding: 100px 10px;
+    }
+
+    //end questions section
+
     //begin help section
 
     .help{
@@ -1074,6 +1239,47 @@ a{
 }
 
 //end phone section
+
+.btn{
+    &-questions{
+        width: 200px;
+        height: 55px;
+    }
+    a{
+        font-size: 15px;
+        line-height: 19px;
+    }
+}
+
+//begin questions section
+
+.questions{
+    padding: 50px 10px;
+    .section-title  *{
+        font-size: 33px;
+        line-height: 44px;
+    }
+    .questions-list{
+        margin-top: 30px;
+        .list-item{
+            .question{
+                padding: 20px;
+                h4{
+                    font-size: 17px;
+                }
+            }
+            .answer{
+                padding: 20px;
+            }
+            .answer > *{
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+//end questions section
 
     //begin help section
 
@@ -1401,6 +1607,37 @@ a{
 
     //end phone section
 
+//begin questions section
+
+.questions{
+    padding: 20px 10px;
+    .section-title  *{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .questions-list{
+        margin-top: 20px;
+        .list-item{
+            margin-bottom: 20px;
+            .question{
+                padding: 15px;
+                h4{
+                    font-size: 16px;
+                }
+            }
+            .answer{
+                padding: 15px;
+            }
+            .answer > *{
+                font-size: 15px;
+                line-height: 17px;
+            }
+        }
+    }
+}
+
+//end questions section
+
     //begin help section
 
     .help{
@@ -1461,6 +1698,31 @@ a{
     }
 
     //end emoji
+
+    //begin questions section
+
+.questions{
+    .questions-list{
+        .list-item{
+            .question{
+                padding: 10px;
+                h4{
+                    font-size: 13px;
+                    max-width: 88%;
+                }
+            }
+            .answer{
+                padding: 10px;
+            }
+            .answer > *{
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+}
+
+//end questions section
 }
 
 @media screen and (max-width: 480px){
@@ -1566,6 +1828,41 @@ a{
     }
 
     //end phone section
+.btn{
+    &-question{
+        width: 185px;
+        height: 50px;
+    }
+}
+        //begin questions section
+
+.questions{
+    .section-title > *{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .questions-list{
+        .list-item{
+            .question{
+                padding: 10px;
+                h4{
+                    font-size: 13px;
+                    line-height: 15px;
+                    max-width: 84%;
+                }
+            }
+            .answer{
+                padding: 10px;
+            }
+            .answer > *{
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+}
+
+//end questions section
 
     //begin help section
 

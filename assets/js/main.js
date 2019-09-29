@@ -22,6 +22,21 @@ function clickBurger(){
     });
 }
 
+function answerOpen(){
+    let btn = $('.question .circle');
+    for(let i=0;i<btn.length;i++){
+        btn.eq(i).click(function(){
+            let lines = btn.eq(i).children('.arrow-lines');
+            let answer = btn.eq(i).parents('.list-item').find('.answer');
+            console.log(answer);
+            let answerLine = btn.eq(i).parents('.list-item').find('.answer_line');
+            lines.toggleClass('open');
+            answer.slideToggle();
+            answerLine.toggleClass('openLine');
+        });
+    }
+}
+
 function resize() {
     let $image = $(".image_animate");
     let $wrapper = $(".top-image");
@@ -49,6 +64,7 @@ $(window).scroll(function(){
 $(document).ready(function(){
     clickBurger();
     resize();
+    answerOpen();
 });
 
 $(window).resize(function () {
