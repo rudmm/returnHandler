@@ -130,7 +130,14 @@ a{
     margin-right: auto;
     position: relative;
 }
-.section-title > *{
+
+section{
+    .mbox{
+        max-width: 1230px;
+    }
+}
+
+main .section-title > *{
     font-family: 'Montserrat';
     font-weight: 900;
     font-size: 45px;
@@ -345,6 +352,7 @@ a{
       }
     .header-content{
         position: relative;
+        display: inline-block;
         z-index: 10;
         max-width: 58%;
         .section-title{
@@ -481,6 +489,36 @@ a{
         .love{
             right: 140px;
             top: 200px;
+        }
+    }
+}
+
+.works{
+    background: #563280 0% 0% no-repeat padding-box;
+    strong{
+        font-weight: 700;
+    }
+    .top-image{
+        top: 150px;
+        .work1{
+            right: 310px;
+            top: 340px;
+        }
+        .bar{
+            right: 240px;
+            top: -50px;
+        }
+        .speech{
+            top: 30px;
+            right: 400px;
+        }
+        .grafic{
+            top: 70px;
+            left: 90px;
+        }
+        .work2{
+            top: 170px;
+            left: 370px;
         }
     }
 }
@@ -837,6 +875,46 @@ a{
 
 //end section platform
 
+//begin section infoflex
+
+.infoflex{
+    padding: 150px 0;
+    .wrapper-block{
+        display: flex;
+        justify-content: space-between;
+        .info_block{
+            flex-basis: 380px;
+            .image_block{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+            .section-title{
+                text-align: center;
+            }
+            .section-title > *{
+                color: #3D466E;
+            }
+            .block_text{
+                margin-top: 20px;
+                text-align: center;
+                font-family: 'Lato';
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                letter-spacing: 0;
+                color: #3D466E;
+                strong{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+//end infoflex section
+
 //begin help section
 
 .help{
@@ -948,6 +1026,12 @@ a{
 //responsive
 
 @media screen and (max-width: 1600px){
+    .works{
+        min-height: 710px;
+    }
+
+    //end header styles
+
     .info{
         &_image{
             margin-left: 50px;
@@ -1001,6 +1085,10 @@ a{
                 margin-bottom: 40px;
             }
         }
+    }
+
+    .works{
+        min-height: 600px;
     }
 
     //end header styles
@@ -1125,6 +1213,14 @@ a{
 
     //end questions section
 
+    //begin infoflex section
+
+    .infoflex{
+        padding: 100px 10px;
+    }
+
+    //end infoflex section
+
     //begin help section
 
     .help{
@@ -1157,7 +1253,7 @@ a{
             z-index: 2;
             margin-top: 110px;
             .section-title > *{
-            font-size: 33px;
+            font-size: 38px;
             line-height: 44px;
             }
             .section-title{
@@ -1185,6 +1281,9 @@ a{
     }
     .solution{
         min-height: 420px;
+    }
+    .works{
+        min-height: 480px;
     }
 
     //end header
@@ -1282,6 +1381,21 @@ a{
 
 //end questions section
 
+//begin infoflex section
+
+.infoflex{
+    padding: 50px 10px;
+    .wrapper-block .info_block{
+        flex-basis: 290px;
+        .block_text{
+            font-size: 21px;
+            line-height: 32px;
+        }
+    }
+}
+
+//end infoflex section
+
     //begin help section
 
     .help{
@@ -1307,6 +1421,10 @@ a{
             width: 200px;
         }
     }
+}
+main .section-title > *{
+    font-size: 33px;
+    line-height: 44px;
 }
 
 @media screen and (max-width: 992px){
@@ -1487,6 +1605,7 @@ a{
             display: none;
         }
         .header-content{
+            margin-top: 50px;
             max-width: 100%;
             .section-title{
                 margin-top: 20px;
@@ -1504,6 +1623,12 @@ a{
         .btn-menu{
             display: inline-block;
             margin-left: auto;
+        }
+    }
+
+    .works{
+        .top-image{
+            margin-top: 45px;
         }
     }
 
@@ -1639,6 +1764,34 @@ a{
 
 //end questions section
 
+//begin infoflex section
+
+.infoflex{
+    padding: 20px 10px;
+    .wrapper-block{
+        flex-direction: column;
+        .info_block{
+            margin-bottom: 20px;
+            .section-title > *{
+                br{
+                    display: none;
+                }
+            }
+            .block_text{
+                font-size: 20px;
+                line-height: 27px;
+            }
+        }
+    } 
+}
+
+//end infoflex section
+
+main .section-title > *{
+    font-size: 30px;
+    line-height: 35px;
+}
+
     //begin help section
 
     .help{
@@ -1724,9 +1877,22 @@ a{
 }
 
 //end questions section
+
+.infoflex{
+    .wrapper-block{
+        .info_block .block_text{
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
 }
 
 @media screen and (max-width: 480px){
+    main .section-title > *{
+        font-size: 20px;
+        line-height: 22px;
+    }
     .header{
         .header_logo{
             width: 190px;

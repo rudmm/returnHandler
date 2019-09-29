@@ -58,13 +58,33 @@ function resize() {
     });
 }
 
+function sizeImageBlock(){
+    let imageBlock = $('.infoflex .image_block');
+    let imageSize = [];
+    for(let i=0;i<imageBlock.length;i++){
+        imageSize.push(imageBlock.eq(i).height());
+    }
+    let size =0;
+    imageSize.sort(function(a,b){
+        if(a>b){
+            size = a;
+            return -1;
+        }
+    });
+    for(let i=0;i<imageBlock.length;i++){
+        imageBlock.eq(i).css('height', size);
+    }
+}
+
 $(window).scroll(function(){
     menu();
 });
+
 $(document).ready(function(){
     clickBurger();
     resize();
     answerOpen();
+    sizeImageBlock();
 });
 
 $(window).resize(function () {
