@@ -523,7 +523,29 @@ main .section-title > *{
     }
 }
 
+.blog{
+    padding: 0;
+    background: #032E61;
+    min-height: 63px;
+    header{
+        .bg{
+            background: #032E61;
+            height: 63px;
+            top: 0;
+        }
+    }
+}
+
 //end header styles
+
+//begin blog
+
+.posts{
+    margin-top: 0px;
+    background: #1B498E;
+}
+
+//end blog
 
 //begin info section
 
