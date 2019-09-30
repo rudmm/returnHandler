@@ -77,6 +77,35 @@ function sizeImageBlock(){
     }
 }
 
+function resizeBrain(){
+    let $image = $(".animate");
+    let $wrapper = $(".brain-image");
+    let basWidth = 1920;
+    let basHeight = 1048;
+    let transformRule = '';
+    let wrapperHeight = $wrapper.height();
+    let wrapperWidth = $wrapper.width();
+    let scale = Math.min(wrapperWidth / basWidth, wrapperHeight / basHeight);
+    let realyHeightImage = $image.height()/(Math.max(basWidth/ $wrapper.width() , basHeight /wrapperHeight  )); 
+    //let procentTranslateY = (100 - realyHeightImage/( wrapperHeight/100))/2 +50;
+    transformRule = "translate(-50%, -"+50+"%) scale(" + scale + ")";
+    let height = basHeight*scale;
+    let section = $('.brain');
+    let margin = 430;
+    $wrapper.css({
+        height : height
+    });
+
+    section.css({
+        marginBottom: margin*scale
+    });
+
+    $image.css({
+        transform: transformRule
+    });
+
+}
+
 $(window).scroll(function(){
     menu();
 });
@@ -86,13 +115,14 @@ $(document).ready(function(){
     resize();
     answerOpen();
     sizeImageBlock();
+    resizeBrain();
 });
 
 $(window).resize(function () {
     resize();
+    resizeBrain();
 });
 $(window).on("orientationchange", function () {
-    if ($(window).width() > 500) {
-        resize();
-    }
+    resize();
+    resizeBrain();
 });

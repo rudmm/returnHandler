@@ -557,6 +557,11 @@ main .section-title > * {
     color: #ffffff;
     cursor: pointer;
     margin-bottom: 70px;
+    transition: .3s;
+  }
+  &-blog:hover{
+    background-color: #262e77;
+    transition: 0.3s;
   }
 }
 .posts {
@@ -740,6 +745,100 @@ main .section-title > * {
 }
 
 //end single
+
+//begin brain section
+
+.brain{
+    background: #E8F0FF 0% 0% no-repeat padding-box;
+    margin-bottom: 430px;
+    .brain-image{
+        width: 100%;
+        height: 1048px;
+    }
+    .wrapper {
+        height: 100%;
+        position: relative;
+    }
+    .animate{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1920px;
+        height: 1048px;
+        .element{
+            position: absolute;
+        }
+        .brain{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .lefttoptext{
+            left: 270px;
+            top: 143px;
+        }
+        .rightbottom{
+            top:120px;
+            left: 790px;
+        }
+        .righttoptext{
+            left: 1155px;
+            top: 105px;
+        }
+        .leftbottom{
+            left: 1270px;
+            top: 380px;
+        }
+        .rightbottomtext{
+            left: 1155px;
+            bottom: 106px;
+        }
+        .lefttop{
+            left: 1270px;
+            bottom: 320px;
+        }
+        .leftbottomtext{
+            left: 360px;
+            bottom: 106px;
+        }
+        .righttop{
+            left: 500px;
+            bottom: 360px;
+        }
+        .bottom{
+            bottom: 260px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .phone_brain{
+            left: 50%;
+            transform: translateX(-50%);
+            top: 800px;    
+            max-width: 307px;
+            .btn{
+                background: #FF4D29 0% 0% no-repeat padding-box;
+                width: 250px;
+                height: 60px;
+                margin-left: auto;
+                margin-right: auto;
+                transition: .3s;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .btn:hover{
+                background-color: #ff1225;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+
+//end brain section
 
 //begin info section
 
