@@ -14,11 +14,13 @@ function clickBurger(){
     let header = $('.header header .bg');
     let fixedblock = $('.header header .fixedblock');
     btn.click(function(){
-        btn.toggleClass('open');
+        
         btn.prev().toggleClass('openlogo');
         navbar.slideToggle(10);
+        btn.toggleClass('open');
         header.toggleClass('fixed mobile','easeInQuad');
         fixedblock.toggleClass('mobilefixedblock','easeInQuad');
+        
        
     });
 }
