@@ -15,6 +15,7 @@ function clickBurger(){
     let fixedblock = $('.header header .fixedblock');
     btn.click(function(){
         btn.toggleClass('open');
+        btn.prev().toggleClass('openlogo');
         navbar.slideToggle(10);
         header.toggleClass('fixed mobile','easeInQuad');
         fixedblock.toggleClass('mobilefixedblock','easeInQuad');
