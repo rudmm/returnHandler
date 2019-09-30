@@ -729,6 +729,11 @@ main .section-title > * {
         line-height: 20px;
         color: #ffffff;
         text-transform: capitalize;
+        transition: .3s;
+      }
+      a:hover{
+        background-color: #262e77;
+        transition: 0.3s;
       }
     }
   }
