@@ -1337,6 +1337,117 @@ main .section-title > * {
     color: #3d466e;
   }
 }
+.form{
+  background: #E8F0FF 0% 0% no-repeat padding-box;
+  padding: 90px 0;
+  min-height: 100vh;
+  .contact-form{
+    border-radius: 4%/2% ;
+    width: 674px;
+    height: 1060px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 66px;
+    padding-left: 70px;
+    .form-title{
+      text-align: left;
+      font-family: 'Montserrat';
+      font-size: 45px;
+      line-height: 55px;
+      font-weight: 900;
+      letter-spacing: 0;
+      color: #3D466E;
+      span{
+        box-shadow: $shadowTitle;
+      }
+      margin-bottom: 35px;
+    }
+    form{
+      label{
+        text-align: left;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0;
+        opacity: 1;
+        display: block;
+        span{
+          color: red;
+        }
+        margin-bottom: 10px;
+      }
+      & > *{
+        outline:none;
+      }
+      input, select{
+        border: 1px solid #D5DCE3;
+        border-radius: 8px;
+        opacity: 1;
+        width: 534px;
+        max-width: 534px;
+        height: 50px;
+        margin-bottom: 20px;
+        background: transparent;
+      }
+      textarea{
+        width: 534px;
+        max-width: 534px;
+        height: 154px;
+        border: 1px solid #D5DCE3;
+        border-radius: 8px;
+        opacity: 1;
+        margin-bottom: 30px;
+        resize: none;
+      }
+      input::placeholder, textarea::placeholder{
+        text-align: left;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: #3D466E;
+        opacity: 0.5;
+      }
+      select{
+        -webkit-appearance: none;
+      }
+      input, textarea, select{
+        box-sizing: border-box;
+        padding: 15px 22px;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+      }
+      button{
+        border: 0;
+        cursor: pointer;
+        width: 250px;
+        height: 60px;
+        background: #FF4D29 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        opacity: 1;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        opacity: 1;
+        transition: all 0.3s;
+      }
+      button:hover{
+        background-color: #ff1225;
+        transition: all 0.3s;
+      }
+
+    }
+  }
+}
 
 //responsive
 
@@ -1493,6 +1604,10 @@ main .section-title > * {
   }
 
   //end flex section
+
+  .form{
+    padding: 45px 0;
+  }
 
   //begin emoji section
 
@@ -1989,6 +2104,35 @@ main .section-title > * {
 
   //end header styles
 
+  //begin form
+
+  .form{
+    padding: 20px 10px;
+    .contact-form{
+      box-sizing: border-box;
+      padding: 30px 50px;
+      width: 100%;
+      max-width: 674px;
+      height: auto;
+      .form-title{
+        font-size: 32px;
+        line-height: 35px;
+      }
+      form{
+        input, textarea{
+          width: 100%;
+          max-width: 100%;
+        }
+        label,input,textarea, input::placeholder, textarea::placeholder{
+          font-size: 15px;  
+          line-height: 17px;
+        }
+      }
+    }
+  }
+
+  //end form
+
   //begin flex section
 
   .infosection {
@@ -2376,6 +2520,40 @@ main .section-title > * {
   }
 
   //single
+  //begin form
+
+  .form{
+    .contact-form{
+      box-sizing: border-box;
+      padding: 20px 20px;
+      .form-title{
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 22px;
+      }
+      form{
+        input, textarea{
+          padding: 10px;
+          height: auto;
+        }
+        textarea{
+          height: 100px;
+        }
+        label,input,textarea, input::placeholder, textarea::placeholder{
+          font-size: 14px;  
+          line-height: 16px;
+        }
+        button{
+          width: 170px;
+          height: 45px;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  //end form
 
   //begin flex slider
 
