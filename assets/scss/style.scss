@@ -200,6 +200,14 @@ main .section-title > * {
       height: 100%;
     }
   }
+  .wp_custom{
+    .bg{
+      top: 72px;
+    }
+    .fixed{
+      top: 32px;
+    }
+  }
   .mbox {
     width: 100%;
     max-width: 1230px;
@@ -225,6 +233,12 @@ main .section-title > * {
   &_menu {
     margin-left: 145px;
     display: inline-block;
+    .current-menu-item{
+      a{
+        padding-bottom: 5px;
+        border-bottom: 1px solid;
+      }
+    }
     .menu-item {
       display: inline;
       margin-right: 50px;
@@ -440,7 +454,7 @@ main .section-title > * {
       top: 50px;
       left: 235px;
       z-index: 8;
-      animation: my-animation 1s ease infinite;
+      animation: my-animation 2s ease infinite;
     }
     .element2 {
       left: 480px;
@@ -480,14 +494,17 @@ main .section-title > * {
     .map {
       top: 140px;
       left: 160px;
+      animation: my-animation 3s ease infinite;
     }
     .star {
       right: 165px;
       top: 45px;
+      animation: my-animation 4s ease infinite;
     }
     .love {
       right: 140px;
       top: 200px;
+      animation: my-animation 2s ease infinite;
     }
   }
 }
@@ -502,22 +519,27 @@ main .section-title > * {
     .work1 {
       right: 310px;
       top: 340px;
+      animation: my-animation 3s ease infinite;
     }
     .bar {
       right: 240px;
       top: -50px;
+      animation: my-animation 4s ease infinite;
     }
     .speech {
       top: 30px;
       right: 400px;
+      animation: my-animation 2s ease infinite;
     }
     .grafic {
       top: 70px;
       left: 90px;
+      animation: my-animation 3s ease infinite;
     }
     .work2 {
       top: 170px;
       left: 370px;
+      animation: my-animation 4s ease infinite;
     }
   }
 }
@@ -531,6 +553,14 @@ main .section-title > * {
       background: #032e61;
       height: 63px;
       top: 0;
+    }
+  }
+  .wp_custom{
+    .bg{
+      top: 32px;
+    }
+    .fixed{
+      top: 32px;
     }
   }
 }
@@ -630,6 +660,10 @@ main .section-title > * {
         font-size: 24px;
         line-height: 29px;
         color: #3d466e;
+      }
+      &_image a img{
+        max-width: 100%;
+        height: auto;
       }
     }
     .post:last-of-type {
@@ -776,6 +810,7 @@ main .section-title > * {
         .lefttoptext{
             left: 270px;
             top: 143px;
+            animation: my-animation 3s ease infinite;
         }
         .rightbottom{
             top:120px;
@@ -784,6 +819,7 @@ main .section-title > * {
         .righttoptext{
             left: 1155px;
             top: 105px;
+            animation: my-animation 4s ease infinite;
         }
         .leftbottom{
             left: 1270px;
@@ -792,6 +828,7 @@ main .section-title > * {
         .rightbottomtext{
             left: 1155px;
             bottom: 106px;
+            animation: my-animation 2s ease infinite;
         }
         .lefttop{
             left: 1270px;
@@ -800,6 +837,7 @@ main .section-title > * {
         .leftbottomtext{
             left: 360px;
             bottom: 106px;
+            animation: my-animation 2s ease infinite;
         }
         .righttop{
             left: 500px;
@@ -910,6 +948,7 @@ main .section-title > * {
         letter-spacing: 0;
         color: #ffffff;
         opacity: 1;
+        padding: 10px;
       }
       a img {
         margin-left: 10px;
@@ -1044,8 +1083,10 @@ main .section-title > * {
   .phone_image {
     text-align: center;
     vertical-align: bottom;
-    img {
+    video {
       transform: translateX(-15%);
+      max-width: 100%;
+      height: auto;
     }
   }
 }
@@ -1511,6 +1552,14 @@ main .section-title > * {
         margin-bottom: 40px;
       }
     }
+    .wp_custom{
+      .bg{
+        top: 86px;
+      }
+      .fixed{
+        top: 46px;
+      }
+    }
   }
 
   .works {
@@ -1519,6 +1568,14 @@ main .section-title > * {
 
   .blog {
     min-height: 63px;
+    .wp_custom{
+      .bg{
+        top: 46px;
+      }
+      .fixed{
+        top: 46px;
+      }
+    }
   }
   //end header styles
 
